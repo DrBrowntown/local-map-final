@@ -31,8 +31,18 @@ var initMap = function() {
     var title = initialLocations[i].name;
 
     // Create a marker per location, and put into markers array.
+    var image = {
+        url: 'img/flag.png',
+        // This marker is 20 pixels wide by 32 pixels high.
+        scaledSize: new google.maps.Size(40, 64),
+        // The origin for this image is (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // The anchor for this image is the base of the flagpole at (0, 32).
+        anchor: new google.maps.Point(0, 32)
+      };
     var marker = new google.maps.Marker({
       map: map,
+      icon: image,
       position: position,
       title: title,
       address: address,
