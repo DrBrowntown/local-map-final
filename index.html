@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Local map project detailing Park Slope">
+    <meta name="author" content="Calvin Brownlee">
+    <title>Map Project</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/styles.js"></script>
+  </head>
+  <body>
+      <div class="container">       
+        <div class="options-box">
+          <div class="header"> 
+              <h1>Park Slope Local Map</h1>          
+          </div>
+              <p class="search">Filter Locations:</p>
+              <input class="filter" name="Filter" data-bind="value: filter, valueUpdate: 'afterkeydown'" />
+
+              <ul class="list" data-bind="foreach: filteredLocations">
+                  <li data-bind="text: name, click: $parent.showMarker"></li>
+              </ul>
+              <div class="wikipedia-container">                
+                <ul class="wikipedia-links"></ul>                  
+              </div>
+        </div>
+        <div id="map" data-bind="map:myMap"></div>      
+        <p class="disclaimer">*Powered by Google Maps and Wikipedia</p>
+      </div>
+       <!--Knockout library -->
+      <script src='js/lib/knockout-3.4.2.js'></script>
+      <!--Load app -->
+      <script src="js/model.js"></script>
+      <script src="js/viewModel.js"></script>
+      <script src="js/view.js"></script>
+      <!--Jquery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+      <!-- Google Javascrip API-->           
+      <script async defer onerror="mapError()" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBE7R1T6QtgmMVMATExL1r7OB_FktDALRI&v=3&callback=initMap">
+      </script>     
+  </body>
+</html>
