@@ -1,6 +1,8 @@
 # Local Map
 
 Udacity project with Google maps and Wikipedia API.
+Link to live version
+(https://drbrowntown.github.io/local-map-final/)
 
 ## Instructions:
 * Extract files.
