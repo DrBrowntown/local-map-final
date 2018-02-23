@@ -22,10 +22,7 @@
 
               <ul class="list" data-bind="foreach: filteredLocations">
                   <li data-bind="text: name, click: $parent.showMarker"></li>
-              </ul>
-              <div class="wikipedia-container">                
-                <ul class="wikipedia-links"></ul>                  
-              </div>
+              </ul>              
         </div>
         <div id="map" data-bind="map:myMap"></div>      
         <p class="disclaimer">*Powered by Google Maps and Wikipedia</p>
