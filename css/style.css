@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  font-family: "Gill Sans", sans-serif;
+  font-family: 'Quattrocento', serif;
  
 }
 
@@ -13,8 +13,8 @@ h2 {
   color: white;
 }
 
-.header {
-  
+.headfont {
+  color: lightgrey;
 }
 
 .container {
@@ -32,8 +32,8 @@ h2 {
   grid-area: 1 / 2 / 7 / 7;
   height: 1200px;
   width: 97%;
-  margin: 10px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .options-box {
@@ -41,7 +41,7 @@ h2 {
   grid-area: 1 / 1 / 7 / 1;
    
   background-color: grey;
-  margin: 10px;
+  margin: 0px;
   padding: 10px;
 }
 

@@ -10,12 +10,14 @@
     <!-- CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/styles.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans|Merriweather|Merriweather+Sans|Nunito|Nunito+Sans|Quattrocento|Quattrocento+Sans|Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
   </head>
   <body>
       <div class="container">       
         <div class="options-box">
           <div class="header"> 
-              <h1>Park Slope Local Map</h1>          
+              <h1>Park Slope Local Map</h1> 
+              <p class="headfont">Instructions: Click flag or list item for more details and a link to a relevant Wikipedia article about location. You may also type to filter locations from map.</p>
           </div>
               <p class="search">Filter Locations:</p>
               <input class="filter" name="Filter" data-bind="value: filter, valueUpdate: 'afterkeydown'" />
@@ -32,7 +34,7 @@
       <!--Load app -->
       <script src="js/model.js"></script>
       <script src="js/viewModel.js"></script>
-      <script src="js/view.js"></script>
+      <script src="js/initmap.js"></script>
       <!--Jquery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
       <!-- Google Javascrip API-->           
