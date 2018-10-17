@@ -2,7 +2,7 @@
 
 Udacity project with Google maps and Wikipedia API.
 Link to live version
-(https://http://map.calvinbrownlee.com/)
+(http://map.calvinbrownlee.com/)
 
 ## Description
 A map using Google Maps Javascript and Wikipedia APIs to populate a map with details including relevant Wikipedia articles. 
