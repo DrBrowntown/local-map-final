@@ -1,7 +1,7 @@
 //#######View Model######//
 
-var ViewModel = function() {
-    var self = this;  
+let ViewModel = function() {
+    let self = this;  
 
     this.locationList = ko.observableArray([]);
 
@@ -18,9 +18,9 @@ var ViewModel = function() {
     this.filter = ko.observable("");
     
     this.filteredLocations = ko.computed(function() {
-        var filter = self.filter().toLowerCase();
+        let filter = self.filter().toLowerCase();
         return ko.utils.arrayFilter(self.locationList(), function(item) {
-            var isVisible = item.name.toLowerCase().indexOf(filter) > -1 || !filter;
+            let isVisible = item.name.toLowerCase().indexOf(filter) > -1 || !filter;
             item.marker.setVisible(isVisible);
             return isVisible;
         });

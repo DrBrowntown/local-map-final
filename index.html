@@ -14,7 +14,7 @@
   </head>
   <body>
       <div class="container">       
-        <div class="options-box">
+        <aside class="options-box">
           <div class="header"> 
               <h1>Park Slope Local Map</h1> 
               <p class="headfont">Instructions: Click flag or list item for more details and a link to a relevant Wikipedia article about location. You may also type to filter locations from map.</p>
@@ -25,8 +25,8 @@
               <ul class="list" data-bind="foreach: filteredLocations">
                   <li data-bind="text: name, click: $parent.showMarker"></li>
               </ul>              
-        </div>
-        <div id="map" data-bind="map:myMap"></div>      
+        </aside>
+        <main id="map" data-bind="map:myMap"></main>      
         <p class="disclaimer">*Powered by Google Maps and Wikipedia</p>
       </div>
        <!--Knockout library -->

@@ -1,6 +1,6 @@
 //###########View###########//
 //Global variables
-var map;
+let map;
 var initialLocations;
 var google;
 var styles;
